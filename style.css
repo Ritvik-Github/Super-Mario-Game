@@ -20,3 +20,21 @@
 #start, #status{
     font-size: 22px;
 }
+
+#footer{
+    position: fixed;
+    bottom: 0;
+    height: 30px;
+    width: 100%;
+    background-color: gainsboro;
+}
+
+h4{
+    background-color: wheat;
+    line-height: 2;
+    margin: 0;
+}
+
+.modal-dialog{
+    width: 90%;
+}

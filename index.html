@@ -33,8 +33,26 @@
       <div class="btn btn-primary heading">
         <h3>AI MARIO GAME</h3>
         <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">Instructions</button>
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="myModalLabel" style="color: black;">Instructions</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">&times;</button>
+              </div>
+              <div class="modal-body">
+                <center>
+                  <img src="jump.png" alt="jumpimage"><br>
+                  <img src="left.png" alt="leftimage"><br>
+                  <img src="right.png" alt="rightimage"><br>
+                </center>
+                <p>Click Outside To Close</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-
       <img src="mario.jpg" alt="mario image" class="big_image">
       <br><br>
       <button class="btn btn-success" onclick="startGame()" id="start"></button>
@@ -43,7 +61,9 @@
       <br><br>
       <div id="canvas"></div>
       <div id="game_console"></div>
-      
+      <div id="footer">
+        <p>Source Code By <a href="www.github.com/linuk">Linuk</a> ||  Credit: Mario</p>
+      </div>
     </center>
   </body>
 </html>
