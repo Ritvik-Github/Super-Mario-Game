@@ -18,14 +18,14 @@ var control={
 var gameConfig={
   
   // start, playing, over
-  status: "start", 
+  status: "start",
   
   // initial lives of mario
-  initialLifes: 4,
+  initialLifes: 5,
 
   // character moves speed
   moveSpeed: 5,
-  enemyMoveSpeed: 1,
+  enemyMoveSpeed: 2,
 
   // gravity and jump speed for all the characters
   gravity: 1,
@@ -53,7 +53,18 @@ var gameConfig={
 =            Game Status             =
 ====================================*/
 
+noseX;
+noseY;
+GameStatus;
+
+function startGame(){
+  GameStatus = "start";
+  document.getElementById("status").innerText = "Game Is Loading";
+}
+
 function game(){
+
+  console.log("Nose X " + noseX + " Nose Y: " +noseY);
 
   instializeInDraw();
   moveEnvironment(mario);
