@@ -26,6 +26,7 @@ function draw() {
 	game();
 }
 
+
 function modelLoaded(){
 	console.log('Model Loaded');
   }
